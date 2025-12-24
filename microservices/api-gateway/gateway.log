@@ -1,0 +1,504 @@
+
+> api-gateway@0.0.1 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m4:23:39 AM[0m] Starting compilation in watch mode...
+
+[[90m4:23:42 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +2ms[39m
+[33m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/auth/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[33m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/property/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/*, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[33m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/transaction/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 21620  - [39m12/24/2025, 4:23:42 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+API Gateway is running on port 4000
+[2J[3J[H[[90m4:24:59 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:24:59 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +7ms[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +2ms[39m
+[33m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/auth/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*, ALL} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[33m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/property/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/*, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[33m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/transaction/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19296  - [39m12/24/2025, 4:25:00 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+API Gateway is running on port 4000
+[2J[3J[H[[90m4:39:06 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:39:06 AM[0m] Found 0 errors. Watching for file changes.
+
+node:internal/modules/cjs/loader:1146
+  throw err;
+  ^
+
+Error: Cannot find module './app.module'
+Require stack:
+- D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\dist\main.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Module._load (node:internal/modules/cjs/loader:984:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\src\main.ts:2:1)
+    at Module._compile (node:internal/modules/cjs/loader:1369:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1427:10)
+    at Module.load (node:internal/modules/cjs/loader:1206:32)
+    at Module._load (node:internal/modules/cjs/loader:1022:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\cs projects\\Real-Estate-Marketplace-Microservices\\microservices\\api-gateway\\dist\\main.js'
+  ]
+}
+
+Node.js v20.12.1
+[2J[3J[H[[90m4:39:07 AM[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m4:40:23 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:40:23 AM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:40:23 AM[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +3ms[39m
+[33m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/auth/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*, ALL} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/*path, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[33m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/transaction/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 21840  - [39m12/24/2025, 4:40:23 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+API Gateway is running on port 4000
+[[90m4:40:24 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +7ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +3ms[39m
+[33m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/auth/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/*path, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[33m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/transaction/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13928  - [39m12/24/2025, 4:40:25 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+API Gateway is running on port 4000
+[2J[3J[H[[90m4:40:25 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:40:25 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +2ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/*path, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[33m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [33m   WARN[39m [38;5;3m[LegacyRouteConverter] [39m[33mUnsupported route path: "/transaction/*". In previous versions, the symbols ?, *, and + were used to denote optional or repeating path parameters. The latest version of "path-to-regexp" now requires the use of named parameters. For example, instead of using a route like /users/* to capture all routes starting with "/users", you should use /users/*path. For more details, refer to the migration guide. Attempting to auto-convert...[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 29048  - [39m12/24/2025, 4:40:26 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+API Gateway is running on port 4000
+[2J[3J[H[[90m4:40:27 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:40:27 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/*path, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*path, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26904  - [39m12/24/2025, 4:40:28 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+API Gateway is running on port 4000
+[2J[3J[H[[90m4:43:03 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:43:06 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +7ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +6ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/*path, ALL} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*path, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+[31m[Nest] 10080  - [39m12/24/2025, 4:43:08 AM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::4000[39m[38;5;3m +5ms[39m
+node:net:1897
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at ExpressAdapter.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:178:16)
+    at bootstrap (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\src\main.ts:13:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.12.1
+[2J[3J[H[[90m4:58:28 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m4:58:28 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +7ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +2ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*path, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 31788  - [39m12/24/2025, 4:58:33 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+API Gateway is running on port 4000
+[2J[3J[H[[90m5:06:28 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:06:28 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*path, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:06:29 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+API Gateway is running on port 4000
+[32m[Nest] 29144  - [39m12/24/2025, 5:13:22 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mCreating property via gateway[39m
+[31m[Nest] 29144  - [39m12/24/2025, 5:13:22 AM [31m  ERROR[39m [38;5;3m[PropertyGatewayController] [39m[31mError creating property: Request failed with status code 400[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:13:31 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mCreating property via gateway[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:13:35 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mFetching all properties[39m
+[32m[Nest] 29144  - [39m12/24/2025, 5:13:35 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mFetching all properties[39m
+[2J[3J[H[[90m5:17:45 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:17:46 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +2ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*path, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18340  - [39m12/24/2025, 5:17:46 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+API Gateway is running on port 4000
+[2J[3J[H[[90m5:17:52 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:17:52 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*path, ALL} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[31m[Nest] 3368  - [39m12/24/2025, 5:17:53 AM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::4000[39m[38;5;3m +1ms[39m
+node:net:1897
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at ExpressAdapter.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:178:16)
+    at bootstrap (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\src\main.ts:13:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.12.1
+[2J[3J[H[[90m5:17:54 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:17:54 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[SearchGatewayController] [39m[32mSearch service URL: http://localhost:3004[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[AnalysisGatewayController] [39m[32mAnalysis service URL: http://localhost:3005[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/*path, ALL} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSearchGatewayController {/search}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalysisGatewayController {/analysis}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/analysis, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:17:55 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+API Gateway is running on port 4000
+[32m[Nest] 26092  - [39m12/24/2025, 5:24:28 AM [32m    LOG[39m [38;5;3m[SearchGatewayController] [39m[32mSearching properties with criteria: {"priceMin":100,"priceMax":200}[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:24:43 AM [32m    LOG[39m [38;5;3m[AnalysisGatewayController] [39m[32mFetching market analysis data[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:24:43 AM [32m    LOG[39m [38;5;3m[AnalysisGatewayController] [39m[32mFetching market analysis data[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:24:47 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mFetching all properties[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:24:47 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mFetching all properties[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:33:47 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mFetching all properties[39m
+[32m[Nest] 26092  - [39m12/24/2025, 5:33:47 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mFetching all properties[39m
+[2J[3J[H[[90m5:35:55 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:35:56 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[TransactionGatewayController] [39m[32mTransaction service URL: http://localhost:3003[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[SearchGatewayController] [39m[32mSearch service URL: http://localhost:3004[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[AnalysisGatewayController] [39m[32mAnalysis service URL: http://localhost:3005[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +2ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSearchGatewayController {/search}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalysisGatewayController {/analysis}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/analysis, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+[31m[Nest] 34556  - [39m12/24/2025, 5:35:56 AM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::4000[39m[38;5;3m +1ms[39m
+node:net:1897
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at ExpressAdapter.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:178:16)
+    at bootstrap (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\src\main.ts:13:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.12.1
+[2J[3J[H[[90m5:41:26 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:41:26 AM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:41:27 AM[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[TransactionGatewayController] [39m[32mTransaction service URL: http://localhost:3003[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[SearchGatewayController] [39m[32mSearch service URL: http://localhost:3004[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[AnalysisGatewayController] [39m[32mAnalysis service URL: http://localhost:3005[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSearchGatewayController {/search}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/search, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalysisGatewayController {/analysis}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/analysis, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13120  - [39m12/24/2025, 5:41:27 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+API Gateway is running on port 4000
+[[90m5:41:28 AM[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:41:28 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:41:29 AM[0m] Found 0 errors. Watching for file changes.
+
+node:internal/modules/cjs/loader:1146
+  throw err;
+  ^
+
+Error: Cannot find module 'D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\dist\main'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Module._load (node:internal/modules/cjs/loader:984:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:135:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.12.1
+[2J[3J[H[[90m5:41:29 AM[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m5:45:17 AM[0m] File change detected. Starting incremental compilation...
+
+[[90m5:45:20 AM[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mHttpModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[PropertyGatewayController] [39m[32mProperty service URL: http://localhost:3002[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[TransactionGatewayController] [39m[32mTransaction service URL: http://localhost:3003[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[SearchGatewayController] [39m[32mSearch service URL: http://localhost:3004[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[AnalysisGatewayController] [39m[32mAnalysis service URL: http://localhost:3005[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthGatewayController {/auth}:[39m[38;5;3m +5ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/*path, ALL} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPropertyGatewayController {/property}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/seller/:sellerId, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, PUT} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/property/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mTransactionGatewayController {/transaction}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/transaction/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSearchGatewayController {/search}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/search, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAnalysisGatewayController {/analysis}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/analysis, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+[31m[Nest] 15484  - [39m12/24/2025, 5:45:22 AM [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::4000[39m[38;5;3m +4ms[39m
+node:net:1897
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1897:16)
+    at listenInCluster (node:net:1945:12)
+    at Server.listen (node:net:2037:7)
+    at ExpressAdapter.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\node_modules\@nestjs\core\nest-application.js:178:16)
+    at bootstrap (D:\cs projects\Real-Estate-Marketplace-Microservices\microservices\api-gateway\src\main.ts:13:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 4000
+}
+
+Node.js v20.12.1

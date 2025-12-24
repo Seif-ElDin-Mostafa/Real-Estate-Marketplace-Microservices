@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from './axiosConfig';
 
 function Admin() {
   const [users, setUsers] = useState([]);
@@ -27,7 +27,7 @@ function Admin() {
 
   const fetchUsers = async (token) => {
     try {
-      const response = await axios.get('http://localhost:5000/auth', {
+      const response = await axios.get('http://localhost:4000/auth', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -47,7 +47,7 @@ function Admin() {
 
   const fetchProperties = async (token) => {
     try {
-      const response = await axios.get('http://localhost:5000/property', {
+      const response = await axios.get('http://localhost:4000/property', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -71,7 +71,7 @@ function Admin() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        `http://localhost:5000/auth/${selectedUser._id}`,
+        `http://localhost:4000/auth/${selectedUser._id}`,
         editedUser,
         {
           headers: {
@@ -96,7 +96,7 @@ function Admin() {
     if (window.confirm('Are you sure you want to delete this user?')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete(`http://localhost:5000/auth/${userId}`, {
+        await axios.delete(`http://localhost:4000/auth/${userId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }
@@ -128,7 +128,7 @@ function Admin() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        `http://localhost:5000/property/${selectedProperty._id}`,
+        `http://localhost:4000/property/${selectedProperty._id}`,
         editedProperty,
         {
           headers: {
@@ -153,7 +153,7 @@ function Admin() {
     if (window.confirm('Are you sure you want to delete this property?')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete(`http://localhost:5000/property/${propertyId}`, {
+        await axios.delete(`http://localhost:4000/property/${propertyId}`, {
           headers: {
             Authorization: `Bearer ${token}`
           }

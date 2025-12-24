@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 import Modal from 'react-modal';
 import Login from './Login';
 import CreateAccount from './CreateAccount';
-import axios from 'axios';
+import axios from './axiosConfig';
 
 
 // ربط المودال مع الـ root
@@ -83,7 +83,9 @@ function Home() {
           <Link to="/about" className="text-gray-600 hover:text-blue-500">About Us</Link>
           <Link to="/buy" className="text-gray-600 hover:text-blue-500">Buy</Link>
           <Link to="/sale" className="text-gray-600 hover:text-blue-500">Sell</Link>
-          
+          <Link to="/search" className="text-gray-600 hover:text-blue-500">Search</Link>
+          <Link to="/analysis" className="text-gray-600 hover:text-blue-500">Market Analysis</Link>
+
           {isLoggedIn ? (
             <>
               {userRole === 'admin' ? (
@@ -149,8 +151,8 @@ function Home() {
         <CreateAccount />
       </Modal>
 
-      {/* Hero Section */}                            
-      <section className="bg-gradient-to-r from-teal-50 to-orange-50 py-0.1 min-h-screen flex flex-col md:flex-row items-center justify-between px-9">   
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-teal-50 to-orange-50 py-0.1 min-h-screen flex flex-col md:flex-row items-center justify-between px-9">
         <div className="md:w-1/2 text-center md:text-left">
           <h1 className="text-4xl font-bold mb-4">Explore your new home for sale or rent</h1>
           <p className="text-gray-600 mb-6">
@@ -171,13 +173,13 @@ function Home() {
           </form>
         </div>
         <div className="md:w-1/2 mt-8 md:mt-0 overflow-hidden">
-    <img
-      src="home.png" 
-      alt="Property Illustration"
-      className="w-full h-auto object-contain rounded-lg"
-      
-    />
-  </div>
+          <img
+            src="home.png"
+            alt="Property Illustration"
+            className="w-full h-auto object-contain rounded-lg"
+
+          />
+        </div>
       </section>
 
       {/* Three Steps Section */}
@@ -200,24 +202,24 @@ function Home() {
           </div>
           <div className="flex-1">
             <img
-                src="company.png"
-                alt="Answer Questions"
-                className="w-40 h-40 mx-auto"
-              />
+              src="company.png"
+              alt="Answer Questions"
+              className="w-40 h-40 mx-auto"
+            />
             <h3 className="text-xl font-semibold mb-5">Featured Agencies (Egypt)</h3>
             <p className="text-gray-600">
               Choose the right property with the help of experts
             </p>
           </div>
           <div className="flex-1">
-             <img
-                src="search.png"
-                alt="Answer Questions"
-                className="w-40 h-40 mx-auto"
-              />
+            <img
+              src="search.png"
+              alt="Answer Questions"
+              className="w-40 h-40 mx-auto"
+            />
             <h3 className="text-xl font-semibold mb-5">Browse real estate agencies by emirate</h3>
             <p className="text-gray-600">
-             View real estate agencies that operate in a specific emirate or region only
+              View real estate agencies that operate in a specific emirate or region only
             </p>
           </div>
         </div>
@@ -229,11 +231,11 @@ function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white shadow-md rounded-lg p-4">
             <Link to="/Buy">
-            <img
-              src="Villa3.jpg"
-              alt="Project 1" 
-              className="w-full h-40 object-cover rounded-t-lg"
-            />
+              <img
+                src="Villa3.jpg"
+                alt="Project 1"
+                className="w-full h-40 object-cover rounded-t-lg"
+              />
             </Link>
             <h3 className="text-lg font-semibold mt-2">Sobha Heartland Villas</h3>
             <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
@@ -243,11 +245,11 @@ function Home() {
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
             <Link to="/Buy">
-            <img
-              src="Villa2.jpg"
-              alt="Project 2"
-              className="w-full h-40 object-cover rounded-t-lg"
-            />
+              <img
+                src="Villa2.jpg"
+                alt="Project 2"
+                className="w-full h-40 object-cover rounded-t-lg"
+              />
             </Link>
             <h3 className="text-lg font-semibold mt-2">Villa to Buy</h3>
             <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
@@ -257,11 +259,11 @@ function Home() {
           </div>
           <div className="bg-white shadow-md rounded-lg p-4">
             <Link to="/Buy">
-            <img
-              src="Townhouse.jpg"
-              alt="Project 3"
-              className="w-full h-40 object-cover rounded-t-lg"
-            />
+              <img
+                src="Townhouse.jpg"
+                alt="Project 3"
+                className="w-full h-40 object-cover rounded-t-lg"
+              />
             </Link>
             <h3 className="text-lg font-semibold mt-2">Townhouse to Buy</h3>
             <p className="text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>

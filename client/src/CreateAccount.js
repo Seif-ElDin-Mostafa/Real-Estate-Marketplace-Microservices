@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from './axiosConfig';
 import { useNavigate } from 'react-router-dom';
 
 function CreateAccount() {
@@ -12,7 +12,7 @@ function CreateAccount() {
 
   async function registerUser() {
     try {
-      const response = await axios.post('http://localhost:5000/auth/register', {
+      const response = await axios.post('http://localhost:4000/auth/register', {
         username,
         email,
         password,

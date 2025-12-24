@@ -4,6 +4,8 @@ import { HttpModule } from '@nestjs/axios';
 import { AuthGatewayController } from './auth/auth-gateway.controller';
 import { PropertyGatewayController } from './property/property-gateway.controller';
 import { TransactionGatewayController } from './transaction/transaction-gateway.controller';
+import { SearchGatewayController } from './search/search-gateway.controller';
+import { AnalysisGatewayController } from './analysis/analysis-gateway.controller';
 
 @Module({
   imports: [
@@ -16,6 +18,8 @@ import { TransactionGatewayController } from './transaction/transaction-gateway.
     AuthGatewayController,
     PropertyGatewayController,
     TransactionGatewayController,
+    SearchGatewayController,
+    AnalysisGatewayController,
   ],
 })
 export class AppModule { }

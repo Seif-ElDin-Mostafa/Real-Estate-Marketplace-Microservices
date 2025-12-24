@@ -1,4 +1,4 @@
-import { Controller, All, Req, Res, UseGuards } from '@nestjs/common';
+import { Controller, All, Req, Res } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { ConfigService } from '@nestjs/config';
 import type { Request, Response } from 'express';
@@ -12,10 +12,10 @@ export class AuthGatewayController {
         private httpService: HttpService,
         private configService: ConfigService,
     ) {
-        this.authServiceUrl = this.configService.get<string>('AUTH_SERVICE_URL') || 'http://localhost:3001/auth';
+        this.authServiceUrl = this.configService.get<string>('AUTH_SERVICE_URL') || 'http://localhost:3001';
     }
 
-    @All('*')
+    @All('*path')
     async proxyToAuthService(@Req() req: Request, @Res() res: Response) {
         const url = `${this.authServiceUrl}${req.url}`;
 

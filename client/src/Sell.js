@@ -9,9 +9,7 @@ function Sale() {
   const [baths, setBathrooms] = useState('');
   const [price, setPrice] = useState('');
   const [images, setImages] = useState([]);
-  const [previewImages, setPreviewImages] = useState([]); // الموقع الافتراضي (لندن)
-  const [sellerId, setSellerId] = useState(''); // إضافة sellerId
-  const [isSold, setIsSold] = useState(false); // إضافة isSold
+  const [previewImages, setPreviewImages] = useState([]);
 
   const handleImageChange = async (e) => {
     const file = e.target.files[0];
@@ -21,7 +19,7 @@ function Sale() {
         maxWidthOrHeight: 1920,
         useWebWorker: true
       };
-      
+
       try {
         const compressedFile = await imageCompression(file, options);
         setImages([compressedFile]);
@@ -53,23 +51,16 @@ function Sale() {
     try {
       const base64Image = images[0] ? await convertToBase64(images[0]) : '';
       const propertyData = {
-        price,
+        price: Number(price),
         address: address,
-        beds: beds,
-        baths: baths,
-        sellerId,
-        isSold,
+        beds: Number(beds),
+        baths: Number(baths),
         image: base64Image
       };
 
-      const result = await axios.post('/property', propertyData, {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${token}`
-        }
-      });
-      
-      if (result.status === 201) {
+      const result = await axios.post('/property', propertyData);
+
+      if (result.data.success) {
         alert("Property listed successfully!");
         // Reset form
         setLocation('');
@@ -78,8 +69,8 @@ function Sale() {
         setPrice('');
         setImages([]);
         setPreviewImages([]);
-        setSellerId('');
-        setIsSold(false);
+      } else {
+        alert(result.data.message || "Failed to list property");
       }
     } catch (error) {
       if (error.response?.status === 401) {
@@ -88,7 +79,8 @@ function Sale() {
         window.location.href = '/';
       } else {
         console.error("Error submitting property:", error);
-        alert("Something went wrong.");
+        const errorMessage = error.response?.data?.message || error.response?.data?.error || "Something went wrong.";
+        alert(errorMessage);
       }
     }
   };
@@ -119,8 +111,6 @@ function Sale() {
             />
           </div>
 
-         
-
           <div>
             <label className="block text-gray-700 font-medium mb-1">Number of Bedrooms</label>
             <input
@@ -129,6 +119,7 @@ function Sale() {
               onChange={(e) => setBedrooms(e.target.value)}
               placeholder="Enter number of bedrooms"
               className="w-full px-3 py-2 border rounded"
+              min="1"
               required
             />
           </div>
@@ -141,6 +132,7 @@ function Sale() {
               onChange={(e) => setBathrooms(e.target.value)}
               placeholder="Enter number of bathrooms"
               className="w-full px-3 py-2 border rounded"
+              min="1"
               required
             />
           </div>
@@ -153,6 +145,7 @@ function Sale() {
               onChange={(e) => setPrice(e.target.value)}
               placeholder="Enter price"
               className="w-full px-3 py-2 border rounded"
+              min="1"
               required
             />
           </div>
@@ -172,8 +165,6 @@ function Sale() {
             </div>
           </div>
 
-          
-
           <button
             type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
@@ -185,10 +176,10 @@ function Sale() {
         {address && (
           <div className="mt-6 p-4 bg-gray-50 rounded">
             <h3 className="text-xl font-semibold mb-2">Property Preview</h3>
-             <p><strong>Price:</strong> ${price}</p>
-            <p><strong>address:</strong> {address}</p>
+            <p><strong>Price:</strong> ${price}</p>
+            <p><strong>Address:</strong> {address}</p>
             <p><strong>Bedrooms:</strong> {beds}</p>
-            <p><strong>Bathrooms:</strong> {baths}</p>          
+            <p><strong>Bathrooms:</strong> {baths}</p>
           </div>
         )}
       </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from './axiosConfig';
 
 function Profile() {
   const [user, setUser] = useState({
@@ -26,7 +26,7 @@ function Profile() {
 
   const fetchUserData = async (token) => {
     try {
-      const response = await axios.get('http://localhost:5000/auth', {
+      const response = await axios.get('http://localhost:4000/auth', {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -54,7 +54,7 @@ function Profile() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        'http://localhost:5000/auth',
+        'http://localhost:4000/auth',
         editedUser,
         {
           headers: {
@@ -97,7 +97,7 @@ function Profile() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.put(
-        'http://localhost:5000/auth/change-password',
+        'http://localhost:4000/auth/change-password',
         {
           currentPassword,
           newPassword
@@ -128,7 +128,7 @@ function Profile() {
     if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
       try {
         const token = localStorage.getItem('token');
-        await axios.delete('http://localhost:5000/auth', {
+        await axios.delete('http://localhost:4000/auth', {
           headers: {
             Authorization: `Bearer ${token}`
           }

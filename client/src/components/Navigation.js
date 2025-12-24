@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios from '../axiosConfig';
 
 function Navigation() {
   const [user, setUser] = useState(null);
@@ -15,12 +15,12 @@ function Navigation() {
 
   const fetchUserData = async (token) => {
     try {
-      const response = await axios.get('http://localhost:5000/auth', {
+      const response = await axios.get('http://localhost:4000/auth', {
         headers: {
           Authorization: `Bearer ${token}`
         }
       });
-      
+
       if (response.status === 200 && response.data.success) {
         setUser(response.data.data);
       }

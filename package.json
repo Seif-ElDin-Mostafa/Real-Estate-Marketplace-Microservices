@@ -1,0 +1,13 @@
+{
+    "name": "real-estate-marketplace",
+    "version": "1.0.0",
+    "description": "Real Estate Marketplace Microservices",
+    "scripts": {
+        "start:all": "concurrently -n \"auth,property,transaction,search,analysis,gateway,client\" -c \"bgBlue,bgGreen,bgYellow,bgMagenta,bgCyan,bgRed,bgWhite\" \"cd microservices/auth-service && npm run start:dev\" \"cd microservices/property-service && npm run start:dev\" \"cd microservices/transaction-service && npm run start:dev\" \"cd microservices/search-service && npm run start:dev\" \"cd microservices/analysis-service && npm run start:dev\" \"cd microservices/api-gateway && npm run start:dev\" \"cd client && npm start\"",
+        "start:services": "concurrently -n \"auth,property,transaction,search,analysis,gateway\" -c \"bgBlue,bgGreen,bgYellow,bgMagenta,bgCyan,bgRed\" \"cd microservices/auth-service && npm run start:dev\" \"cd microservices/property-service && npm run start:dev\" \"cd microservices/transaction-service && npm run start:dev\" \"cd microservices/search-service && npm run start:dev\" \"cd microservices/analysis-service && npm run start:dev\" \"cd microservices/api-gateway && npm run start:dev\"",
+        "start:client": "cd client && npm start"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

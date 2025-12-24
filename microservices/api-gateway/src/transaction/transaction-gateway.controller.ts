@@ -1,42 +1,103 @@
-import { Controller, All, Req, Res } from '@nestjs/common';
+import { Controller, Post, Get, Delete, Body, Param, Headers, Logger, HttpException, HttpStatus } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import { ConfigService } from '@nestjs/config';
-import type { Request, Response } from 'express';
 import { firstValueFrom } from 'rxjs';
 
 @Controller('transaction')
 export class TransactionGatewayController {
+    private readonly logger = new Logger(TransactionGatewayController.name);
     private transactionServiceUrl: string;
 
     constructor(
         private httpService: HttpService,
         private configService: ConfigService,
     ) {
-        this.transactionServiceUrl = this.configService.get<string>('TRANSACTION_SERVICE_URL') || 'http://localhost:3003/transaction';
+        this.transactionServiceUrl = this.configService.get<string>('TRANSACTION_SERVICE_URL') || 'http://localhost:3003';
+        this.logger.log(`Transaction service URL: ${this.transactionServiceUrl}`);
     }
 
-    @All('*')
-    async proxyToTransactionService(@Req() req: Request, @Res() res: Response) {
-        const url = `${this.transactionServiceUrl}${req.url}`;
-
+    @Post()
+    async createTransaction(@Body() transactionData: any, @Headers('authorization') auth: string) {
         try {
+            this.logger.log('Creating transaction via gateway');
             const response = await firstValueFrom(
-                this.httpService.request({
-                    method: req.method,
-                    url: url,
-                    data: req.body,
+                this.httpService.post(`${this.transactionServiceUrl}/transaction`, transactionData, {
                     headers: {
-                        ...req.headers,
-                        host: undefined,
+                        'Authorization': auth,
+                        'Content-Type': 'application/json',
                     },
                 }),
             );
-
-            res.status(response.status).json(response.data);
+            return response.data;
         } catch (error) {
-            const status = error.response?.status || 500;
-            const data = error.response?.data || { message: 'Internal server error' };
-            res.status(status).json(data);
+            this.logger.error(`Error creating transaction: ${error.message}`);
+            throw new HttpException(
+                error.response?.data || { success: false, message: 'Failed to create transaction' },
+                error.response?.status || HttpStatus.INTERNAL_SERVER_ERROR,
+            );
+        }
+    }
+
+    @Get()
+    async getAllTransactions(@Headers('authorization') auth: string) {
+        try {
+            this.logger.log('Fetching all transactions via gateway');
+            const response = await firstValueFrom(
+                this.httpService.get(`${this.transactionServiceUrl}/transaction`, {
+                    headers: {
+                        'Authorization': auth,
+                    },
+                }),
+            );
+            return response.data;
+        } catch (error) {
+            this.logger.error(`Error fetching transactions: ${error.message}`);
+            throw new HttpException(
+                error.response?.data || { success: false, message: 'Failed to fetch transactions' },
+                error.response?.status || HttpStatus.INTERNAL_SERVER_ERROR,
+            );
+        }
+    }
+
+    @Get(':id')
+    async getTransactionById(@Param('id') id: string, @Headers('authorization') auth: string) {
+        try {
+            this.logger.log(`Fetching transaction ${id} via gateway`);
+            const response = await firstValueFrom(
+                this.httpService.get(`${this.transactionServiceUrl}/transaction/${id}`, {
+                    headers: {
+                        'Authorization': auth,
+                    },
+                }),
+            );
+            return response.data;
+        } catch (error) {
+            this.logger.error(`Error fetching transaction ${id}: ${error.message}`);
+            throw new HttpException(
+                error.response?.data || { success: false, message: 'Failed to fetch transaction' },
+                error.response?.status || HttpStatus.INTERNAL_SERVER_ERROR,
+            );
+        }
+    }
+
+    @Delete(':id')
+    async deleteTransaction(@Param('id') id: string, @Headers('authorization') auth: string) {
+        try {
+            this.logger.log(`Deleting transaction ${id} via gateway`);
+            const response = await firstValueFrom(
+                this.httpService.delete(`${this.transactionServiceUrl}/transaction/${id}`, {
+                    headers: {
+                        'Authorization': auth,
+                    },
+                }),
+            );
+            return response.data;
+        } catch (error) {
+            this.logger.error(`Error deleting transaction ${id}: ${error.message}`);
+            throw new HttpException(
+                error.response?.data || { success: false, message: 'Failed to delete transaction' },
+                error.response?.status || HttpStatus.INTERNAL_SERVER_ERROR,
+            );
         }
     }
 }

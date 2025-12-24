@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from './axiosConfig';
 import { useNavigate } from 'react-router-dom';
 
 function Login({ onLoginSuccess }) {
@@ -8,38 +8,65 @@ function Login({ onLoginSuccess }) {
   const navigate = useNavigate();
 
   async function loginUser() {
+    console.log('=== LOGIN ATTEMPT STARTED ===');
+    console.log('Username:', username);
+    console.log('Password length:', password.length);
+
     try {
+      console.log('Sending request to /auth/login...');
       const response = await axios.post('/auth/login', {
         username,
         password
       });
-      
-      if (response.status === 200) {
-        console.log('Login response:', response.data);
+
+      console.log('=== LOGIN RESPONSE RECEIVED ===');
+      console.log('Status:', response.status);
+      console.log('Response data:', response.data);
+
+      if (response.status === 200 || response.status === 201) {
+        console.log('Login successful!');
+        console.log('Token:', response.data.token);
+        console.log('Role:', response.data.role);
+        console.log('User ID:', response.data.userId);
 
         // Store the JWT token
         localStorage.setItem('token', response.data.token);
         // Store the user role
         localStorage.setItem('role', response.data.role);
-        console.log('Stored role:', response.data.role);
+        // Store the user ID
+        localStorage.setItem('userId', response.data.userId);
+        console.log('Token, role, and userId stored in localStorage');
+
         if (onLoginSuccess) {
+          console.log('Calling onLoginSuccess callback');
           onLoginSuccess(); // Call the callback to update parent state
         }
+
+        console.log('Navigating to home page...');
         navigate('/'); // Navigate to home page
       }
     } catch (error) {
+      console.error('=== LOGIN ERROR ===');
+      console.error('Error details:', error);
+      console.error('Error response:', error.response);
+      console.error('Error message:', error.message);
       alert('Login failed. Please check your username and password.');
-      console.error('Error logging in:', error);
     }
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log('=== FORM SUBMITTED ===');
+    console.log('Username field:', username);
+    console.log('Password field:', password ? '(provided)' : '(empty)');
+
     if (!username || !password) {
+      console.warn('Missing username or password');
       alert('Please enter both username and password.');
       return;
     }
 
+    console.log('Calling loginUser()...');
     loginUser();
   };
 
