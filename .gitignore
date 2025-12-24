@@ -9,3 +9,7 @@
 .env.test
 **/.env
 **/.env.*
+
+# Build outputs
+**/dist/
+/dist/
