@@ -502,3 +502,4 @@ Error: listen EADDRINUSE: address already in use :::4000
 }
 
 Node.js v20.12.1
+^C
