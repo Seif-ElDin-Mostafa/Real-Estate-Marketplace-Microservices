@@ -10,6 +10,7 @@ import Profile from './Profile';
 import Admin from './Admin';
 import Navigation from './components/Navigation';
 import Login from './Login';
+import Transactions from './Transactions';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/analysis" element={<Analysis />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/transactions" element={<Transactions />} />
       </Routes>
     </Router>
   );

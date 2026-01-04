@@ -85,6 +85,7 @@ function Home() {
           <Link to="/sale" className="text-gray-600 hover:text-blue-500">Sell</Link>
           <Link to="/search" className="text-gray-600 hover:text-blue-500">Search</Link>
           <Link to="/analysis" className="text-gray-600 hover:text-blue-500">Market Analysis</Link>
+          {isLoggedIn && <Link to="/transactions" className="text-gray-600 hover:text-blue-500">Transactions</Link>}
 
           {isLoggedIn ? (
             <>
