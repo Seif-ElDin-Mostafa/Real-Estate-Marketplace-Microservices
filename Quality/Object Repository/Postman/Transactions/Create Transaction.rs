@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>Create Transaction</name>
+   <tag></tag>
+   <elementGuidId>0564e237-a266-44af-8545-764d553a8841</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;propertyId\&quot;: \&quot;${propertyId}\&quot;,\n    \&quot;buyerId\&quot;: \&quot;${userId}\&quot;,\n    \&quot;sellerId\&quot;: \&quot;${sellerId}\&quot;,\n    \&quot;amount\&quot;: 500000\n}&quot;,
+  &quot;contentType&quot;: &quot;text/plain&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${authToken}</value>
+      <webElementGuid>940420d4-9a6d-4d78-84e5-406fab995850</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>10.4.3</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <path></path>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${baseUrl}/transaction</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.baseUrl</defaultValue>
+      <description></description>
+      <id>f9937830-7f50-446c-8be0-f1ea086f2748</id>
+      <masked>false</masked>
+      <name>baseUrl</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.authToken</defaultValue>
+      <description></description>
+      <id>e646f0c5-9c04-43c2-b983-ce69dd37ddee</id>
+      <masked>false</masked>
+      <name>authToken</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.propertyId</defaultValue>
+      <description></description>
+      <id>deedaba7-5b21-439b-9a2e-508018f3735e</id>
+      <masked>false</masked>
+      <name>propertyId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.userId</defaultValue>
+      <description></description>
+      <id>ac4993b6-4090-46c5-a5c1-712a48b4edcf</id>
+      <masked>false</masked>
+      <name>userId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.sellerId</defaultValue>
+      <description></description>
+      <id>da4696c9-a2fe-4f54-9d6f-ce0dd162e63d</id>
+      <masked>false</masked>
+      <name>sellerId</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

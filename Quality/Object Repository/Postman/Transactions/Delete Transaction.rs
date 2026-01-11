@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>Delete Transaction</name>
+   <tag></tag>
+   <elementGuidId>81ddda31-1e09-4c61-8000-b006fc4e56ba</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer ${authToken}</value>
+      <webElementGuid>6e35167c-9f12-4d1e-a430-96a4888ce642</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>10.4.3</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <path></path>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>${baseUrl}/transaction/${transactionId}</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.baseUrl</defaultValue>
+      <description></description>
+      <id>114f3895-6b21-4d2b-a02f-6bb9f3767fc8</id>
+      <masked>false</masked>
+      <name>baseUrl</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.transactionId</defaultValue>
+      <description></description>
+      <id>3a03aa20-8490-4a28-a38d-9a5b111a6d0a</id>
+      <masked>false</masked>
+      <name>transactionId</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.authToken</defaultValue>
+      <description></description>
+      <id>67cd1544-a4ee-40c9-a0c2-9cd6e4c8a153</id>
+      <masked>false</masked>
+      <name>authToken</name>
+   </variables>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>

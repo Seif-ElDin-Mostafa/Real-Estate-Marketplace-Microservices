@@ -106,7 +106,7 @@ function Sale() {
               value={address}
               onChange={(e) => setLocation(e.target.value)}
               placeholder="Enter property Address"
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded address-input"
               required
             />
           </div>
@@ -118,7 +118,7 @@ function Sale() {
               value={beds}
               onChange={(e) => setBedrooms(e.target.value)}
               placeholder="Enter number of bedrooms"
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded beds-input"
               min="1"
               required
             />
@@ -131,7 +131,7 @@ function Sale() {
               value={baths}
               onChange={(e) => setBathrooms(e.target.value)}
               placeholder="Enter number of bathrooms"
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded baths-input"
               min="1"
               required
             />
@@ -144,7 +144,7 @@ function Sale() {
               value={price}
               onChange={(e) => setPrice(e.target.value)}
               placeholder="Enter price"
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded price-input"
               min="1"
               required
             />
@@ -156,7 +156,7 @@ function Sale() {
               type="file"
               accept="image/*"
               onChange={handleImageChange}
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded image-input"
             />
             <div className="flex space-x-2 mt-2">
               {previewImages.map((preview, index) => (
